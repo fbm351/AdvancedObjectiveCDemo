@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ConvertDataTypes.h"
+#import "ScientificCalculator.h"
 
 @interface ViewController ()
 
@@ -17,7 +19,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    ScientificCalculator *sc = [[ScientificCalculator alloc] init];
+    [sc clear];
+    
+    NSString *myString = @"iPod, iPhone, iPad";
+    NSUInteger occurrences = [myString occurrencesOfString:@"i"];
+    NSLog(@"Occurrences: %u", occurrences);
+    
+
+    
 }
 
 - (void)viewDidUnload
