@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ConvertDataTypes.h"
 #import "ScientificCalculator.h"
+#import "Calendar.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,8 @@
     NSUInteger occurrences = [myString occurrencesOfString:@"i"];
     NSLog(@"Occurrences: %u", occurrences);
     
+    Calendar *calendar = [[Calendar alloc] init];
+    NSLog(@"Today is: %@", calendar.today);
 
     
 }
